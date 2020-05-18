@@ -6,3 +6,4 @@ dash-table==4.1.0
 pandas==0.24.2
 plotly==4.1.0
 geopy==1.10.0
+gunicorn==19.9.0
