@@ -21,7 +21,7 @@ for s in gun_data['tags']:
             if t:
                 tag.append(t)
     if tag:
-        tag[0] = tag[0][1:]
+        tag[0] = tag[0][1:]d
         tag[-1] = tag[-1][:-1]
     incident_tags.append(tag)
 def get_text(gun_data, i):
@@ -82,6 +82,8 @@ def get_index(year):
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
+app.title= 'gun-violence'
 
 # Create global chart template
 mapbox_access_token = "pk.eyJ1IjoiaGFpbWluZzIiLCJhIjoiY2syem91YXp3MGVwbTNtcWlncnU2bXJvZyJ9.j7YvkG1KFA43x7lTMxSrDQ"
